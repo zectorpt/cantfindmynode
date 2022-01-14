@@ -10,4 +10,7 @@ Reproduction of:<br>
 6 - Scale the vmss to one<br>
 7 - Check the pod lost without PVC<br>
 8 - Remove the PVC annotation and wait the pod to be alive<br>
-
+<br><br>
+1 -<br>
+az group create --name lostnode --location eastus<br>
+az aks create --resource-group lostnode --name k8snoautoscaler --node-count 1 --enable-addons monitoring --generate-ssh-keys<br>
