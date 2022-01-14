@@ -19,3 +19,6 @@ kubectl apply -f https://raw.githubusercontent.com/zectorpt/cantfindmynode/main/
 3 -<br>
 kubectl get nodes<br>
 kubectl annotate persistentvolumeclaims manageddisk volume.kubernetes.io/selected-node=[NODENAME]<br>
+4 -<br>
+kubectl apply -f https://raw.githubusercontent.com/zectorpt/cantfindmynode/main/deployment.yaml<br>
+
