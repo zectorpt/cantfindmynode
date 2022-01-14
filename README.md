@@ -14,3 +14,4 @@ Reproduction of:<br>
 1 -<br>
 az group create --name lostnode --location eastus<br>
 az aks create --resource-group lostnode --name k8snoautoscaler --node-count 1 --generate-ssh-keys<br>
+2 -<br>
