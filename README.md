@@ -15,3 +15,5 @@ Reproduction of:<br>
 az group create --name lostnode --location eastus<br>
 az aks create --resource-group lostnode --name k8snoautoscaler --node-count 1 --generate-ssh-keys<br>
 2 -<br>
+kubectl apply -f https://raw.githubusercontent.com/zectorpt/cantfindmynode/main/pvc.yaml<br>
+kubectl get nodes
