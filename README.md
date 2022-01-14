@@ -5,7 +5,7 @@ Reproduction of:<br>
 1 - Create a cluster in AKS without autoscaler<br>
 2 - Create a PVC<br>
 3 - Insert an anotation to the PVC to force it to belong to a specific node<br>
-4 - Create a pod with the claim and mount configured<br>
+4 - Create a deployment with a claim and mount configured<br>
 5 - Scale the vmss to zero<br>
 6 - Scale the vmss to one<br>
 7 - Check the pod lost without PVC<br>
