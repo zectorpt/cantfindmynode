@@ -21,4 +21,12 @@ kubectl get nodes<br>
 kubectl annotate persistentvolumeclaims manageddisk volume.kubernetes.io/selected-node=[NODENAME]<br>
 4 -<br>
 kubectl apply -f https://raw.githubusercontent.com/zectorpt/cantfindmynode/main/deployment.yaml<br>
-
+5 -<br>
+az vmss list -o table -g MC_lostnode_k8snoautoscaler_eastus
+az vmss scale --name aks-nodepool1-33463102-vmss --new-capacity 0 --resource-group MC_lostnode_k8snoautoscaler_eastus<br>
+6 -<br>
+az vmss scale --name aks-nodepool1-33463102-vmss --new-capacity 1 --resource-group MC_lostnode_k8snoautoscaler_eastus<br>
+7 -<br>
+kubectl get pods<br>
+kubectl describe pod ubuntu-[PODNAME]<br>
+8 -<br>
