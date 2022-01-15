@@ -30,3 +30,4 @@ az vmss scale --name aks-nodepool1-33463102-vmss --new-capacity 1 --resource-gro
 kubectl get pods<br>
 kubectl describe pod ubuntu-[PODNAME]<br>
 8 -<br>
+kubectl annotate persistentvolumeclaims manageddisk volume.kubernetes.io/selected-node-
