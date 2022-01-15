@@ -15,6 +15,9 @@ spec:
       containers:
       - name: ubuntu
         image: ubuntu:latest
+        command:
+          - "sleep"
+          - "3600"
         volumeMounts:
         - mountPath: "/mnt/azure"
           name: volume
