@@ -1,9 +1,7 @@
 # Can't find my node!
 The sad story of a PVC that can't find his node.<br>
 How an annotation in a pvc can prevent a pod to be recreated in another node.
-
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Lost_main_title.svg/800px-Lost_main_title.svg.png" alt="LostImage"  width="50%" height="50%">
-
 <br><br>
 Steps:<br>
 1 - Create a cluster in AKS without autoscaler<br>
