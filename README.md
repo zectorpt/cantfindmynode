@@ -10,6 +10,7 @@ Reproduction of:<br>
 6 - Scale the vmss to one<br>
 7 - Check the pod lost without PVC<br>
 8 - Remove the PVC annotation and wait the pod to be alive<br>
+9 - Delete everything<br>
 <br><br>
 1 -<br>
 az group create --name lostnode --location eastus<br>
@@ -30,4 +31,6 @@ az vmss scale --name aks-nodepool1-33463102-vmss --new-capacity 1 --resource-gro
 kubectl get pods<br>
 kubectl describe pod ubuntu-[PODNAME]<br>
 8 -<br>
-kubectl annotate persistentvolumeclaims manageddisk volume.kubernetes.io/selected-node-
+kubectl annotate persistentvolumeclaims manageddisk volume.kubernetes.io/selected-node-<br>
+9 -<br>
+az group delete --name lostnode
