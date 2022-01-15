@@ -17,7 +17,7 @@ spec:
         image: ubuntu:latest
         command:
           - "sleep"
-          - "3600"
+          - "86400"
         volumeMounts:
         - mountPath: "/mnt/azure"
           name: volume
