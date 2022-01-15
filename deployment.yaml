@@ -1,24 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: ubuntu
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: ubuntu
   template:
     metadata:
       labels:
-        app: nginx
+        app: ubuntu
     spec:
       containers:
-      - name: nginx
-        image: nginx
+      - name: ubuntu
+        image: ubuntu:latest
         volumeMounts:
         - mountPath: "/mnt/azure"
           name: volume
-        ports:
-        - containerPort: 80
       volumes:
       - name: volume
         persistentVolumeClaim:
